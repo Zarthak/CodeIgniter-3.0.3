@@ -1,0 +1,388 @@
+/*GENERAL*/
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0 0 10px #abc;
+    border-radius: 4px;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-variant: small-caps;
+}
+
+main {
+    text-align: center;
+}
+
+/*MENU*/
+nav {
+    background-color: rgba(46, 255, 45, 0.18);
+}
+
+#img {
+    width: 50%;
+    height: auto;
+    max-width: 100%;
+}
+
+nav ul {
+    list-style: outside none none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    margin-right: -4px;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    color: #1E90FF;
+}
+
+li a:hover {
+    background-color: #FFFFFF;
+}
+
+/*FORMULAIRE*/
+form {
+    display: block;
+    height: auto;
+    margin: 10px auto;
+    text-align: center;
+}
+
+form#co {
+    width: 50%;
+    max-width: 450px;
+}
+
+form#ajEnfant {
+    width: 70%;
+    max-width: 600px;
+}
+
+legend {
+    border-left: solid 1px #171616;
+    border-right: solid 1px #171616;
+    padding: 0 5px;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+span.info {
+    font-size: 0.9em;
+}
+
+fieldset {
+    border: solid 2px #708090;
+    border-radius: 5px;
+}
+
+fieldset p {
+    margin: 10px;
+    padding: 5px;
+}
+
+em {
+    color: #f00;
+    font-weight: bold;
+    font-style: normal;
+}
+
+label {
+    display: inline-block;
+    font-variant: small-caps;
+    width: 35%;
+    text-align: left;
+}
+
+select#idTheme {
+    width: 30%;
+    display: inline-flex;
+
+}
+
+input {
+    width: 60%;
+    height: 30px;
+    border: solid 2px #cccccc;
+}
+
+input:focus {
+    background-color: #9c9c9c;
+}
+
+input[type=submit] {
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: none;
+    padding: 7px;
+    background-color: #00ab00;
+    color: #fff;
+    font-weight: bold;
+    width: 110px;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #1717dd;
+}
+
+div#dSubmitAjEnf > input[type=submit] {
+    float: none;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: none;
+    padding: 7px;
+    background-color: #00ab00;
+    color: #fff;
+    font-weight: bold;
+    width: 110px;
+}
+
+div#dSubmitAjEnf > input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #1717dd;
+}
+
+div#dLogin input[type=text] {
+    border-radius: 10px 10px 0 0;
+}
+
+div#dMdp input[type=password] {
+    border-radius: 0 0 10px 10px;
+}
+
+div#groupeNomEnfant input {
+    border-radius: 10px 10px 0 0;
+}
+
+div#groupeDdnEnfant input {
+    border-radius: 0 0 10px 10px;
+}
+
+/*AFFICHAGE ENFANT*/
+table {
+    border: solid 2px slategrey;
+    display: table;
+    margin: 0 auto;
+
+}
+
+a.btLien {
+    display: inline-block;
+    width: 150px;
+    height: auto;
+    margin: 10px auto;
+    border: none;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #00ab00;
+}
+
+a#btAjEnfant:hover {
+    background-color: #1717dd;
+}
+
+/*compte*/
+section#infos {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+section#parents {
+    display: block;
+    width: 49%;
+    float: right;
+}
+
+section#enfants {
+    display: block;
+    width: 49%;
+    float: left;
+}
+
+/*footer*/
+footer {
+    display: block;
+    text-align: right;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer a {
+    margin: 0 10px;
+}
+
+/**************/
+/*INTERFACES*/
+/***********/
+.test label {
+    text-align: center;
+    margin: 5px 2px;
+    padding: 0.4em 3em;
+    color: #000;
+    background-color: #FFF;
+    border-radius: 10px;
+    display: inline-block;
+    border: solid 1px #CCC;
+    cursor: pointer;
+    width: 40px;
+}
+
+.test .Vert {
+    background: lightgreen;
+    border: solid 1px green !important;
+}
+
+.test .Normal {
+    color: #000;
+    background-color: #FFF;
+}
+
+.test .Activite {
+    color: #000;
+    background-color: #ffa93a;
+}
+
+.test label .t {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 20px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 20px;
+}
+
+.test {
+    display: inline-block;
+}
+
+.jours {
+    display: inline-block;
+    width: 137px;
+    text-align: center;
+    padding-right: 5px;
+}
+
+.activite label {
+    text-align: center;
+    margin: 5px 2px;
+    padding: 0.4em 3em;
+    color: #000;
+    background-color: #FFF;
+    border-radius: 10px;
+    display: inline-block;
+    border: solid 1px #CCC;
+    cursor: pointer;
+    width: 40px;
+}
+
+.activite label .t {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 20px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 20px;
+}
+
+.activite {
+    display: inline-block;
+}
+
+.activite .NormalActivite {
+    color: #000;
+    background-color: #FFF;
+}
+
+.activite .VertActivite {
+    color: #000;
+    background-color: #ffa93a;
+}
+
+h2 {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+/**********************************/
+/**********CSS RESPONSIVE**********/
+/**********************************/
+
+@media screen and (max-width: 900px) {
+    /*FORMULAIRE*/
+    form {
+        display: block;
+        width: 100%;
+    }
+
+    form#co {
+        width: 100%;
+        margin: auto;
+    }
+
+    label {
+        display: block;
+        width: 100%;
+        padding-bottom: 10px;
+        text-align: center;
+
+    }
+
+    input {
+        width: 75%;
+    }
+
+    input[type=submit] {
+        float: none;
+        margin: auto auto 10px;
+        width: 100px;
+    }
+
+    #dMdp span {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    div#groupeDdnEnfant > label {
+        font-size: 14px;
+    }
+}
